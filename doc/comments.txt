@@ -1,0 +1,7 @@
+项目结构说明:
+1. bin: 项目的启动文件,配置以什么方式启动项目,默认 npm start
+2. public: 静态文件,放置 js css html img等文件
+3. routes: 项目路由信息文件,控制地址路由
+4. views: 视图文件,放置模板文件 ejs 或 jade 等
+5. node_modules: 项目依赖包
+

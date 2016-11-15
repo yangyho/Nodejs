@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style type="text/css">
+	table td{
+		padding: 5px 20px;
+		text-align: center;
+	}
+</style>
+<body>
+	<table border="1">
+		<thead>
+			<tr><td>Id</td><td>开发者</td><td>操作</td></tr>
+			<tbody id="developer">
+				
+			</tbody>
+		</thead>
+	</table>
+	<h1><span id="name"></span></h1>
+	<script type="text/javascript" src="./src/assets/js/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			console.log("in")
+			var param = new Object;
+
+			$.ajax({
+                url: "/test/test_Select",
+                dataType: "json",
+                async: true,
+                data: param,
+                type: "POST",
+                success: function(msn) {
+                	console.log(msn)
+                	var str = "";
+                	for(var i = 0;i<msn.aaData.length;i++){
+                		str += "<tr><td>" + msn.aaData[i].Id + "</td><td>" + msn.aaData[i].developerName + "</td><td><button>查看</button><button>修改</button><button>删除</button></td></tr>"
+                	}
+                	$("#developer").html(str)
+                }
+            })
+		})
+	</script>
+</body>
+</html>
