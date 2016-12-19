@@ -1,7 +1,3 @@
-/**
- * Created by THAT'SLIFE on 2016/10/29.
- */
-
 var err = require("./db/err.js");
 var sql = require("./db/dbapi.js");
 

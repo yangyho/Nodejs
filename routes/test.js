@@ -1,7 +1,3 @@
-/**
- * Created by THAT'SLIFE on 2016/10/29.
- */
-
 var express = require('express');
 var router = express.Router();
 var test = require('../service/test_service');
