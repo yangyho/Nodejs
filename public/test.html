@@ -23,14 +23,9 @@
 	<script type="text/javascript" src="./src/assets/js/jquery-1.10.2.min.js"></script>
 	<script type="text/javascript">
 		$(function(){
-			console.log("in")
 			var param = new Object;
-
 			$.ajax({
-                url: "/test/test_Select",
-                dataType: "json",
-                async: true,
-                data: param,
+                url: "http://yangyh.imwork.net/test/test_Select",
                 type: "POST",
                 success: function(msn) {
                 	console.log(msn)

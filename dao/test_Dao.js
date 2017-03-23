@@ -34,4 +34,16 @@ exports.test_Select = function(param,callback){
 }
 
 // 删
+exports.test_Delete = function(param,callback){
+	var pagenum = parseInt(param.num) || 0;
+	var Id = param.Id || null;
+	
+	var result = new Object(); 
+	var sql = 'DELETE FROM developer WHERE Id =' + Id
+	
+	
+	dbapi.sqlQuery(sql,function(data,err){
+		result.aaData = data.aaData;
+	});
+}
 // exports.test_Delete
