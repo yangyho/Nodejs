@@ -1,10 +1,4 @@
-/**
- * Created by THAT'SLIFE on 2016/10/29.
- */
 "use strict";
-/**
- * The file For err
- */
 var errObj = {
 	"success":{
 		"status":0,

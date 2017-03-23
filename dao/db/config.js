@@ -1,6 +1,3 @@
-/**
- * Created by THAT'SLIFE on 2016/10/29.
- */
 module.exports = {
 mysql: {
 	user: 'root',

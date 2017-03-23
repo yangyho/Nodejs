@@ -1,7 +1,4 @@
 "use strict";
-/**
- * The api for DataBase
- */
 var config = require('./config.js');
 var errobj = require('./err.js');
 var errStatus = errobj.InitErr();
